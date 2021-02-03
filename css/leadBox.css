@@ -1,0 +1,35 @@
+.leadBox {
+    /*将导航栏固定在页面顶部*/
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    /*使用替代盒模型*/
+    box-sizing: border-box;
+    /* flex布局 */
+    display: flex;
+    align-items: center;
+    /* 各属性值设置 */
+    height: 60px;
+    width: 100%;
+    background-color: #3C424D;
+    padding: 0 20px;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 13pt;
+    line-height: 1.5em;
+    font-weight: 600;
+    color: white;
+}
+ul {
+    display: inherit;
+    align-items: inherit;
+    margin-left: 15px;
+    border: 1px solid #575D69;
+    height: 45px;
+    border-radius: 4px;
+}
+li {
+    display: inherit;
+    padding: 0 20px;
+    height: inherit;
+    align-items: center;
+}

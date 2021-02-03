@@ -1,0 +1,45 @@
+.leftBox {
+    margin-top: 60px;
+    display: flex;
+    width: 405px;
+    height: 2000px;
+    background-color: rgb(245, 246, 247);
+    float: left;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 14pt;
+    font-weight: 300;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 115px;
+    width: 100%;
+    background-color: rgb(239, 241, 242);
+}
+.search > input{
+    height: 45px;
+    width: 255px;
+    border: 1px solid rgb(221, 225, 227);
+    border-right: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 0 15px;
+    background-color: white;
+    font: inherit;
+    -webkit-text-fill-color: rgb(185, 190, 192);
+}
+.search > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border: 1px solid rgb(221, 225, 227);
+    border-left: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: white;
+    font-size: 20px;
+    color: rgb(185, 190, 192);
+}
