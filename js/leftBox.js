@@ -1,4 +1,5 @@
-window.onload = function() {
+export {searchFocus,leftPart2ButtonHover};
+function searchFocus() {
     function Focus() {
         inputBox.style.borderColor = 'rgb(245, 106, 106)';
         searchImg.style.borderColor = 'rgb(245, 106, 106)';
@@ -11,4 +12,10 @@ window.onload = function() {
     let searchImg = document.querySelector('.search > div'); 
     inputBox.addEventListener('focus', Focus);
     inputBox.addEventListener('blur', Blur);
+}
+
+function leftPart2ButtonHover() {
+    let button = document.querySelector('.left_part2 button');
+    button.addEventListener('mouseover', () => {button.style.backgroundColor = 'rgb(244, 238, 239)';});
+    button.addEventListener('mouseout', () => {button.style.backgroundColor = 'inherit';});
 }

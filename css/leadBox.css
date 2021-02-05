@@ -19,7 +19,7 @@
     font-weight: 600;
     color: white;
 }
-ul {
+.leadBox ul {
     display: inherit;
     align-items: inherit;
     margin-left: 15px;
@@ -27,9 +27,13 @@ ul {
     height: 45px;
     border-radius: 4px;
 }
-li {
+.leadBox li {
     display: inherit;
     padding: 0 20px;
     height: inherit;
     align-items: center;
+}
+
+.leadBox a{
+    color: inherit;
 }
