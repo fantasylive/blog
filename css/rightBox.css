@@ -1,0 +1,208 @@
+.rightBox {
+    margin-top:60px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.rightBox > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 117px;
+    width: 105px;
+    color: rgb(245, 106, 106);
+    font-size: 30px;
+}
+.right_main {
+    display: flex;
+    flex-direction: column;
+    width: 1290px;
+}
+.right_main_part1 {
+    height: 160px;
+    border-bottom: 5px solid rgb(245, 106, 106);
+}
+.right_main_part1 h1{
+    margin-top: 110px;
+    font-size: 20px;
+    color: rgb(148, 136, 143);
+    font-family: cursive;
+}
+.right_main_part1 span{
+    color: rgb(61, 68, 73);
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.right_main_part2{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 90px 0;
+    border-bottom: 2px solid rgb(221, 225, 227);
+}
+.right_main_part2 > div:first-child{
+    flex: 1;
+}
+.right_main_part2 > div:last-child{
+    height: 100%;
+    flex: 1;
+}
+.right_main_part2 > div:last-child img{
+    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.right_main_part2 > div:first-child h1{
+    font-size: 70px;
+    color: rgb(61, 68, 73);
+}
+.right_main_part2 > div:first-child h3{
+    font-size: 20px;
+    margin: 40px 0;
+    color: rgb(127, 136, 143);
+}
+.right_main_part2 > div:first-child p{
+    padding-right: 60px;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(127, 136, 143);
+    margin-bottom: 40px;
+}
+.right_main_part2 > div:first-child button{
+    height: 45px;
+    width: 160px;
+    border: 2px solid rgb(245, 106, 106);
+    border-radius: 6px;
+    color: rgb(245, 106, 106);
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+}
+.right_main_part3{
+    padding: 90px 0;   
+    border-bottom: 2px solid rgb(221, 225, 227);
+}
+.diamond{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+    border: 2px solid rgb(221, 225, 227);
+    transform: rotate(45deg); 
+    overflow: hidden;
+    margin-right: 50px;
+    z-index: -1;
+}
+.right_main_part3 > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.right_main_part3 article{
+    flex: 600px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+.right_main_part3 h1 {
+    width: 180px;
+    font-size: 30px;
+    color: rgb(61, 68, 73);
+    border-bottom: 3px solid rgb(245, 106, 106);
+    padding-bottom: 10px;
+}
+.right_main_part3 article {
+    margin-top: 100px;
+    margin-left: 10px;
+}
+.right_main_part3 article h2{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(61, 68, 73);
+    margin-bottom: 20px;
+}
+.right_main_part3 article p{
+    width: 400px;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(127, 136, 143);
+}
+.diamond i{
+    display: block;
+    font-size: 50px;
+    transform: rotate(-45deg); 
+    color: rgb(245, 106, 106);
+}
+.right_main_part4{
+    padding: 90px 0;
+    overflow:hidden;
+}
+.right_main_part4 h1{
+    width: 260px;
+    font-size: 30px;
+    color: rgb(61, 68, 73);
+    border-bottom: 3px solid rgb(245, 106, 106);
+    padding-bottom: 10px;
+}
+.right_main_part4 table{
+    margin-top: 55px;
+}
+.right_main_part4 img {
+    width: 360px;
+    height: 220px;
+    max-width: 100%;
+    border-radius: 6px;
+}
+.right_main_part4 table td {
+    border-top: 0;
+    border-right: 1px solid rgb(221, 225, 227);
+    border-bottom: 1px solid rgb(221, 225, 227);
+    border-left: 0;
+}
+
+.right_main_part4 table tr.lastrow td {
+    border-bottom: 0;
+}
+
+.right_main_part4 table tr td.lastCol {
+    border-right: 0;
+}
+.right_main_part4 h3{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(61, 68, 73);
+    margin: 30px 0;
+}
+.right_main_part4 p{
+    width: 350px;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(127, 136, 143);
+}
+.right_main_part4 button{
+    height: 50px;
+    width: 105px;
+    border: 2px solid rgb(245, 106, 106);
+    border-radius:6px;
+    color: rgb(245, 106, 106);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 30px;
+    background-color: white;
+}
+.right_main_part4 tr > td:not(:first-child){
+    padding-left: 50px;
+    padding-right:50px;
+}
+.right_main_part4 .lastrow td{
+    padding-top: 50px;
+}
+.right_main_part4 tr:not(.lastrow) td{
+    padding-bottom: 50px;
+}
+.right_main_part4 tr > td:first-child{
+    padding-right:50px;
+}

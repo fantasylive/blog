@@ -4,7 +4,6 @@
     flex-direction: column;
     width: 405px;
     background-color: rgb(245, 246, 247);
-    float: left;
     font-family: 'Source Sans Pro', Arial, sans-serif;
     font-size: 14pt;
     font-weight: 300;
@@ -29,7 +28,7 @@
     font: inherit;
     -webkit-text-fill-color: rgb(185, 190, 192);
 }
-.search > div {
+.search > a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +42,6 @@
     font-size: 20px;
     color: rgb(185, 190, 192);
 }
-
 .left_part_common {
     display: flex;
     flex-direction: column;
@@ -92,6 +90,7 @@
     font-weight: 600;
     margin-top: 30px;
     margin-bottom: -20px;
+    background-color: white;
 }
 .left_part2 img{
     max-width: 100%;

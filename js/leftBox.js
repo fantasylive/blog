@@ -9,7 +9,7 @@ function searchFocus() {
         searchImg.style.borderColor = 'rgb(221, 225, 227)';
     }    
     let inputBox = document.querySelector('.search > input');
-    let searchImg = document.querySelector('.search > div'); 
+    let searchImg = document.querySelector('.search > a'); 
     inputBox.addEventListener('focus', Focus);
     inputBox.addEventListener('blur', Blur);
 }
