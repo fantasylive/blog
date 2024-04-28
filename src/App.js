@@ -1,21 +1,18 @@
-import { Layout } from "antd";
 import { RouterProvider } from "react-router-dom";
 import Copyright from "./components/Copyright";
 import router from "./routes";
 
-const { Content, Footer, Header } = Layout;
-
 function App() {
   return (
-    <Layout>
-      <Header></Header>
-      <Content>
+    <div id="app">
+      <div className="header"></div>
+      <div className="content">
         <RouterProvider router={router} />
-      </Content>
-      <Footer>
+      </div>
+      <div className="footer">
         <Copyright />
-      </Footer>
-    </Layout>
+      </div>
+    </div>
   );
 }
 

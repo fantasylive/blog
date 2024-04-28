@@ -1,5 +1,4 @@
-import style from './style.module.css'
-
+import style from './style.module.less'
 function Copyright(){
     return (
         <div className={style.copyright}>

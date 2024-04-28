@@ -1,19 +1,23 @@
 import { createBrowserRouter } from "react-router-dom";
 import ProjectDisplay from "./components/ProjectDisplay";
-import {AntdForm} from "./pages/demos";
+import { AntdForm } from "./pages/antd-demos";
+import projects from "@/projects.js";
+import antdDemosProjects from "@/pages/antd-demos/projects.js";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <ProjectDisplay />,
+    element: <ProjectDisplay projects={projects} />,
   },
   {
-    path: "/demos",
-    element: <ProjectDisplay />,
-  },
-  {
-    path: "/demos/antdForm",
-    element: <AntdForm />,
+    path: "/antd-demos",
+    element: <ProjectDisplay projects={antdDemosProjects} />,
+    children: [
+      {
+        path: "antdForm",
+        element: <AntdForm />,
+      },
+    ],
   },
 ]);
 
