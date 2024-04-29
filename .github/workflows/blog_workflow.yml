@@ -1,57 +1,28 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+ # 显示得workflow名称
+ name: blog
+ on: 
+   # 推送到master分支开始打包
+   push:
+     branches:
+       - main
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: [main]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
-env:
-  # Hosted GitHub runners have 7 GB of memory available, let's use 6 GB
-  NODE_OPTIONS: --max-old-space-size=6144
-
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: $
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: npm
-      - name: Clean cache 
-        run: npm config set registry https://registry.npmjs.org && npm config set proxy false
-      - name: Install dependencies
-        run: npm i
-      - name: Build
-        run: npm run build
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          # Upload entire repository
-          path: build
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+ jobs:
+   # 开始打包
+   Build:
+     runs-on: ubuntu-latest
+     steps:
+     - name: checkout code
+       # 迁出触发的流程的版本 能让下面的工作流程访问
+       uses: actions/checkout@v2
+       # setup-node 可以提供node环境，指定node版本以及 npm /yarn缓存
+     - name: actions/setup-node@v2
+       uses: actions/setup-node@v2   
+       with:
+         node: 16.14
+     # 初始用的npm 打包时间太长了，就想着用yarn 结果没仔细看文档，yarn 不用安装 ubuntu 上面有的 
+     # - name: install yarn 
+     #  uses: npm install yarn     
+     # - run: yarn install
+     # - run: yarn build
+     # 简写为
+     - run: yarn install && yarn build
