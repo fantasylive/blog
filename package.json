@@ -1,6 +1,6 @@
 {
   "name": "blog",
-  "homepage": "https://fantasylive.github.io/",
+  "homepage": "https://fantasylive.github.io/blog/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
