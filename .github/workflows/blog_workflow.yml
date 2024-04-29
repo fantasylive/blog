@@ -39,10 +39,10 @@ jobs:
         with:
           node-version: 18
           cache: npm
-      - name: Set registry
-        run: npm config set registry https://mirrors.huaweicloud.com/repository/npm/ && npm config set proxy false && npm cache clean --force
+      - name: Clean cache 
+        run: npm config set proxy false && npm cache clean --force
       - name: Install dependencies
-        run: npm install
+        run: npm i
       - name: Build
         run: npm run build
       - name: Setup Pages
